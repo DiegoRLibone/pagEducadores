@@ -7,7 +7,7 @@ function HomeEducacao() {
     <div className={Styles.verdeSaudeContainer}>
       <div className={Styles.verdeSaudeConteudo}>
         <header className={Styles.verdeSaudeCabecalho}>
-          <h1>BOAS-VINDAS A SAÚDE ACENIS !</h1>
+          <h1>BOAS-VINDAS A EDUCAÇÃO ACENIS !</h1>
           <h2>Educação especializada para crianças<br />com síndrome de Down</h2>
           <p>Professores preparados para estimular o desenvolvimento integral dos alunos.</p>
           <button className={Styles.verdeSaudeBotao}>
@@ -17,7 +17,7 @@ function HomeEducacao() {
       </div>
 
       {/* Estatística agora fora do verdeSaudeConteudo */}
-      <div className={Styles.estaristicaContainer}>
+      <div className={Styles.verdeEstatisticaContainer}>
         <div className={Styles.verdeSaudeCardUnico}>
           <div className={Styles.verdeSaudeItemEstatistica}>
             <div className={Styles.verdeSaudeItemContent}>
