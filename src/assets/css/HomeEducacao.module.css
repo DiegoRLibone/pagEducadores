@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.verdeSaudeContainer {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: url('../images/homesaude.png') no-repeat center center;
+  background-size: cover;
+  color: #333;
+  padding: 20px;
+  padding-bottom: 0px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Importante para empurrar estatística pra baixo */
+  
+    & h1{
+        font-family: "Baloo Tamma";
+    }
+    & h2{
+        font-family: "Baloo Tamma";
+    }
+    & a{
+        font-family: "Baloo Tamma";
+    }
+    & p{
+        font-family: "Nunito";
+    }
+}
+
+.verdeSaudeConteudo {
+  width: 100%;
+  max-width: 1200px;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.verdeSaudeCabecalho {
+  text-align: left;
+  margin-top: 100px;
+}
+
+.verdeSaudeCabecalho h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.3;
+}
+
+.verdeSaudeCabecalho h2 {
+  font-size: 48px;
+  color: #ffffff;
+  margin-bottom: 30px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.verdeSaudeCabecalho p {
+  font-size: 24px;
+  color: #ffffff;
+  font-weight: 400;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+.verdeSaudeBotao {
+  background-color: #3EBA85;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.verdeSaudeBotao a {
+  text-decoration: none;
+  color: white;
+}
+
+.verdeSaudeBotao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(255, 57, 126, 0.3);
+}
+
+.estaristicaContainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 60px; /* Ajusta a distância do conteúdo principal */
+}
+
+.verdeSaudeCardUnico {
+  width: 80%;
+  background: #f0f3ef;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+  flex-wrap: nowrap;
+}
+
+.verdeSaudeItemEstatistica {
+  width: 30%;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.verdeSaudeItemContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.verdeSaudeDivisoria {
+  width: 1px;
+  background-color: #e0e0e0;
+  margin: 20px 0;
+}
+
+.verdeSaudeIconeEstatistica {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+}
+
+.verdeSaudeItemEstatistica p {
+  font-size: 20px;
+  color: #333;
+  line-height: 1.4;
+  font-weight: 500;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .verdeSaudeCabecalho {
+    margin-top: 50px;
+  }
+
+  .verdeSaudeCardUnico {
+    flex-direction: column;
+    margin-top: 50px;
+    padding: 30px;
+    display: none;
+    box-shadow: none;
+  }
+
+  .verdeSaudeDivisoria {
+    display: none;
+  }
+
+  .verdeSaudeItemContent {
+    display: none;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .verdeSaudeCabecalho h1 {
+    font-size: 20px;
+  }
+
+  .verdeSaudeCabecalho h2 {
+    font-size: 36px;
+  }
+
+  .verdeSaudeCabecalho p {
+    font-size: 18px;
+  }
+
+  .verdeSaudeItemContent {
+    display: none;
+  }
+
+  .verdeSaudeBotao {
+    padding: 12px 24px;
+    font-size: 16px;
+  }
+
+  .verdeSaudeCardUnico {
+    margin-top: 30px;
+  }
+
+  .verdeSaudeItemEstatistica {
+    padding: 20px;
+  }
+
+  .verdeSaudeItemEstatistica p {
+    font-size: 16px;
+  }
+
+  .verdeSaudeIconeEstatistica {
+    width: 40px;
+    height: 40px;
+  }
+}
