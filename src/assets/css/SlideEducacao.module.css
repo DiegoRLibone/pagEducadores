@@ -225,7 +225,7 @@
 }
 
 /* Responsividade */
-@media (max-width: 1024px) {
+@media (max-width: 1124px) {
   .verde-educacao-container {
     padding: 24px;
   }
@@ -245,7 +245,7 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 950px) {
   .verde-educacao-container {
     padding: 16px;
   }
