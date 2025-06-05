@@ -110,11 +110,12 @@
 
 .verde-filtro-select {
   width: 100%;
-  padding: 0.75rem;
+  padding: 1rem;
   border: 1px solid #d1d5db;
   border-radius: 0.5rem;
   background: #f9fafb;
   transition: all 0.2s;
+  font-size: 1rem;
 }
 
 .verde-filtro-select:focus {
@@ -137,7 +138,7 @@
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   transition: all 0.2s;
   font-family: "Baloo Tamma";
-  font-size: small;
+  font-size: 1rem;
 }
 
 .verde-btn-buscar:hover {
